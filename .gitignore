@@ -1,0 +1,9 @@
+node_modules/
+*.log
+*.zip
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.bak
+*.tmp
