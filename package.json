@@ -1,0 +1,37 @@
+{
+  "name": "dsh-context-offload",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "GPL-3.0-or-later",
+  "author": "QUANJIANGJUN",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QUANJIANGJUN/dsh-context-offload.git"
+  },
+  "homepage": "https://github.com/QUANJIANGJUN/dsh-context-offload#readme",
+  "bugs": {
+    "url": "https://github.com/QUANJIANGJUN/dsh-context-offload/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "context",
+    "compaction",
+    "token"
+  ],
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js"
+  },
+  "description": "把已完成的会话工作从模型上下文中卸下，替换成墓碑提示（原文保留、界面不变）",
+  "dsh": {
+    "bundle": {
+      "patch": "./dsh.bundle.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
