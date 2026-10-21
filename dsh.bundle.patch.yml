@@ -1,0 +1,6 @@
+# context-offload 的 bundle patch
+# 由 @deepseek-ai/dsh 的 profile loader 读取：把插件作为一个 cordis 行插进组合。
+# `name` 从 profile 的 node_modules 里解析。
+- insert:
+    - id: context-offload
+      name: dsh-context-offload
